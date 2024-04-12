@@ -1,0 +1,12 @@
+.box {
+  display: block;
+  padding: 20px;
+  border: 2px solid;
+  margin: 20px;
+}
+
+.box1 {
+  /* display: none; */
+
+  visibility: hidden;
+}

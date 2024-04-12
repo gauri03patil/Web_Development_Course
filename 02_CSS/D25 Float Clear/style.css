@@ -1,0 +1,19 @@
+.boxes {
+  border: 2px solid grey;
+  display: flow-root;
+}
+
+.boxes img {
+  float: left;
+  /* width: 200px; */
+}
+
+.box {
+  border: 2px solid green;
+  padding: 10px;
+  margin: 10px;
+}
+
+.box2 {
+  clear: both;
+}

@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+
+body {
+  background-color: #2b3033;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  padding: 50px;
+  color: #fff;
+  font-size: 48px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #4861ec;
+  box-shadow: 0 0 0px 15px #353f6d;
+  margin: 50px;
+  display: inline-block;
+  border-radius: 50%;
+
+  /*? animation start here  */
+  /* animation-name: trip;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  /* animation-delay: 2s; */
+  /* animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-fill-mode: backwards; */
+
+  /*? Animation name : we assign a any name to animation  as we have seen in transiotion we apply transition on hover but using animation property we can apply animation on page load we no need to hover any where
+  
+  animation name its similar to function name we can say*/
+  animation-name: leftToRight;
+  /* ?animation duration - Defines the length of time that an animation takes to complete one cycle */
+  animation-duration: 3s;
+  /* animation-timing-function: we specify the time of animation */
+  animation-timing-function: linear;
+  /*Delay- we start animation after a seconds or miinits eg delay:2s */
+  /* animation-delay: 1s; */
+  /* Interation count : how many time animation should get played its count or infinit */
+  animation-iteration-count: 2;
+  /* We specify the direction of animation like start to end or end to start  or alternative */
+  animation-direction: alternate;
+}
+
+@keyframes leftToRight {
+  from {
+    translate: 0%;
+  }
+  to {
+    translate: calc(90vw - 100px);
+  }
+}
+/* @keyframes lefttoright {
+  from {
+    translate: 0%;
+  }
+  to { */
+/* translate: 90vw; */
+/* translate: calc(90vw - 100px);
+  }
+} */
+
+/* @keyframes lefttoright {
+  0% {
+    translate: 0%;
+  }
+  50% {
+    translate: 50vw 50vh;
+  }
+  100% {
+    translate: calc(90vw - 100px);
+  }
+} */
+
+/* @keyframes trip {
+  0% {
+    background-color: #ffbb5cb5;
+    transform: translate(200px, 0%);
+  }
+  25% {
+    background-color: #fcbf49;
+    transform: translate(calc(90vw - 10%));
+  }
+  50% {
+    background-color: #000000;
+    transform: translate(calc(90vw - 10%), 500px);
+  }
+  75% {
+    background-color: #fcbf49;
+    transform: translate(20%, 500px);
+  }
+  100% {
+    background-color: #ffbb5cb5;
+    transform: translate(20%, 0%);
+  }
+ } */

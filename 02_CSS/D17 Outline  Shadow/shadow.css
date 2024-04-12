@@ -1,0 +1,27 @@
+.box {
+  padding: 10px;
+  border: 2px solid grey;
+  margin: 10px;
+  box-shadow: 5px 5px 15px 5px #888888;
+
+  /* default shadow is out set */
+
+  /* box-shadow: h-offset v-offset blur spread color inset; */
+}
+/* .box1 {
+  box-shadow: inset 8px 12px 15px 5px #888888;
+} */
+.box p {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  text-shadow: -20px -10px 3px #888888;
+}
+
+.outline {
+  border: 2px solid red;
+  padding: 10px;
+  outline: 1px solid grey;
+  outline-offset: 10px;
+  border-radius: 20px;
+}

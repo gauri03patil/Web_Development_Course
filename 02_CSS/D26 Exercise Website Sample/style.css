@@ -1,0 +1,87 @@
+:root {
+  --padding-nav: 10px;
+  --margin-global: 10px;
+  --border: 1px solid grey;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+}
+header {
+  height: 8vh;
+  background-color: azure;
+  font-size: 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+ul li {
+  padding: var(--padding-nav);
+  border: var(--border);
+  margin: 15px;
+}
+
+main {
+  /* height: 90vh; */
+  /* background-color: antiquewhite; */
+  /* padding: 10px; */
+  /* margin: 10px; */
+}
+.background {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  border: 2px solid grey;
+  margin: var(--margin-global);
+  padding: var(--padding-nav);
+  background-color: aqua;
+}
+.square {
+  width: 800px;
+  height: 800px;
+  border: 2px solid black;
+  color: black;
+  font-size: 45px;
+}
+.box1 {
+  background-color: blue;
+}
+.box2 {
+  background-color: yellow;
+}
+.icon {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 2;
+}
+.quotes p {
+  border: var(--border);
+  margin: auto;
+  width: 800px;
+  height: 150px;
+  text-align: center;
+  justify-content: center;
+  /* justify-items: center; */
+  /* padding: 30px; */
+  padding: 50px 0px;
+  font-size: 50px;
+  border-radius: 15px;
+  background-color: violet;
+}
+footer {
+  height: 10vh;
+}

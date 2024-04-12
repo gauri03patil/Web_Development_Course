@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      } */
+      .todoList {
+        width: 100vw;
+        height: 100vh;
+      }
+      .todoData {
+        display: flex;
+        gap: 2rem;
+        padding-top: 2rem;
+        /* justify-content: space-around;
+         */
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="todoList flex">
+      <form>
+        <div class="todoinputs">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            aria-describedby="helpId"
+            placeholder="Enter Your TODO data"
+          />
+          <input type="button" id="AddTodo" value="ADD TODO" />
+        </div>
+      </form>
+      <div class="todoDataList">
+        <!-- <div class="todoData flex">
+          <li>Apple</li>
+          <button class="deleteData">Delete</button>
+        </div> -->
+      </div>
+    </section>
+    <script>
+      let enterTodo = document.getElementById("search");
+      let addData = document.getElementById("AddTodo");
+      let divData = document.querySelector(".todoDataList");
+
+      let todoListData,
+        todoListDataArray =
+          JSON.parse(localStorage.getItem("fruitsArray")) || [];
+      console.log(enterTodo);
+      console.log(addData);
+
+      const handleInputData = (e) => {
+        e.preventDefault();
+        todoListData = enterTodo.value.toLowerCase();
+
+        console.log(todoListData);
+        enterTodo.value = "";
+
+        console.log(todoListDataArray);
+        // console.log(todoListDataArray);
+
+        if (todoListData !== "" && !todoListDataArray.includes(todoListData)) {
+          console.log(todoListData);
+          todoListDataArray.push(todoListData);
+          todoListDataArray = [...new Set(todoListDataArray)];
+          console.log(todoListDataArray);
+
+          console.log(divData);
+          let divElement = document.createElement("div");
+          divElement.classList.add("todoData");
+          divData.append(divElement);
+          divElement.innerHTML = `<li>${todoListData}</li>
+            <button class="deleteData">Delete</button>`;
+
+          localStorage.setItem(
+            "fruitsArray",
+            JSON.stringify(todoListDataArray)
+          );
+        }
+      };
+      addData.addEventListener("click", handleInputData);
+      // addData.addEventListener("keypress", (event) => {
+      //   if (event.key === "Enter" || event.key === "enter") {
+      //     event.preventDefault();
+      //     handleInputData(e);
+      //   }
+      // });
+
+      const showData = (arrayData) => {
+        console.log(arrayData);
+        let divElement = document.createElement("div");
+        divElement.classList.add("todoData");
+        divData.append(divElement);
+        divElement.innerHTML = `<li>${arrayData}</li>
+            <button class="deleteData">Delete</button>`;
+      };
+      const showLocalStorageData = (fruits) => {
+        fruits.forEach((element) => {
+          showData(element);
+        });
+      };
+      const displayLocalStorageData = () => {
+        let fruitsData = JSON.parse(localStorage.getItem("fruitsArray"));
+        console.log(fruitsData);
+        showLocalStorageData(fruitsData);
+      };
+
+      displayLocalStorageData();
+
+      const deleteRecord = (e) => {
+        e.preventDefault();
+        let currentDeleteButton = e.target;
+        // console.log(currentDeleteButton.previousElementSibling);
+        let PreviousElement = currentDeleteButton.previousElementSibling;
+        let removeElement = PreviousElement.innerText;
+
+        localStorageArray = JSON.parse(localStorage.getItem("fruitsArray"));
+        console.log(localStorageArray);
+
+        let deleteElementIndex = localStorageArray.indexOf(removeElement);
+        console.log(deleteElementIndex);
+
+        localStorageArray.splice(deleteElementIndex, 1);
+        // console.log(localStorageArray);
+        localStorage.setItem("fruitsArray", JSON.stringify(localStorageArray));
+
+        console.log(localStorage.getItem("fruitsArray"));
+        PreviousElement.parentElement.remove();
+
+        //delete value also from todolistArray
+        todoListDataArray.splice(deleteElementIndex, 1);
+      };
+
+      const handledeleteFunction = () => {
+        let deleteButton = document.querySelectorAll(".deleteData");
+        deleteButton.forEach((element) => {
+          element.addEventListener("click", (e) => {
+            e.preventDefault();
+            deleteRecord(e);
+          });
+        });
+      };
+      document
+        .querySelector(".todoDataList")
+        .addEventListener("click", handledeleteFunction);
+    </script>
+  </body>
+</html>

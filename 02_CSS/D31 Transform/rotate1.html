@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotate</title>
+    <style>
+      body {
+        display: flex;
+        gap: 100px;
+      }
+      .container {
+        width: 170px;
+        height: 200px;
+        border: 2px solid black;
+        display: block;
+        margin: 200px auto;
+
+        transform: rotateX(180deg);
+        /* transform: rotateY(250deg); */
+        /* transform: rotateZ(250deg); */
+      }
+
+      .rotate {
+        transform: rotate(250deg);
+      }
+      .rotateX {
+        transform: rotateX(150deg);
+      }
+      .rotateY {
+        transform: rotateY(150deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container rotate rotateZ">Rotate+Z</div>
+    <div class="container rotateX">Rotation X</div>
+    <div class="container rotateY">Rotation Z</div>
+  </body>
+</html>

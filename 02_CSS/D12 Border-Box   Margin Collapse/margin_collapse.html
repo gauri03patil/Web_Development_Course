@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Margin Collapse</title>
+
+    <style>
+      .block {
+        /* display: block-level; */
+        display: block;
+      }
+
+      .inline {
+        display: inline-block;
+      }
+
+      .box1 {
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+        margin: 30px;
+      }
+      .box2 {
+        height: 200px;
+        width: 200px;
+        background-color: green;
+        margin: 20px;
+      }
+      .box3 {
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+        display: inline-block;
+        margin: 20px;
+      }
+      .box4 {
+        height: 200px;
+        width: 200px;
+        background-color: green;
+        display: inline-block;
+        margin: 20px;
+      }
+
+      .inline_element {
+        display: inline-block;
+      }
+      .block_element1 {
+        height: 200px;
+        width: 200px;
+        background-color: green;
+        display: block;
+        margin: 20px;
+      }
+      .block_element2 {
+        height: 200px;
+        width: 200px;
+        background-color: green;
+        display: block;
+        margin: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block">
+      <div class="box1">This is inline box 1</div>
+      <div class="box2">This is inline box 2</div>
+    </div>
+
+    <!-- Marging Collapse is not applied on left and right maring or in inlinr element -->
+    <br />
+    <div class="inline">
+      <div class="box3">This is box 1</div>
+      <div class="box4">This is box 2</div>
+    </div>
+
+    <br />
+
+    <!-- Inline Element and its adjacent block level element -->
+    <div class="inline_element">
+      <div class="box3 block_element1">This is box 1</div>
+      <div class="box4 block_element2">This is box 2</div>
+    </div>
+  </body>
+</html>

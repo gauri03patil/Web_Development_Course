@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Flex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      section {
+        width: 800px;
+        height: 800px;
+
+        background-image: linear-gradient(
+          to left bottom,
+          #d16ba5,
+          #c777b9,
+          #ba83ca,
+          #aa8fd8,
+          #9a9ae1,
+          #8aa7ec,
+          #79b3f4,
+          #69bff8,
+          #52cffe,
+          #41dfff,
+          #46eefa,
+          #5ffbf1
+        );
+
+        /* Flex ➡   ⬆  ⬇*/
+
+        display: flex;
+
+        /* When direction in row then main axia(justify content) is ➡  and cross axis(align-item) is ⬇ */
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        /* When direction in column then main axia(justify content) is ⬇  and cross axis(align-item) is ➡*/
+        /*flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+
+        /* When direction in row-revers then main axia(justify content) is ⬅  and cross axis(align-item) is ⬇ */
+        /* flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center; */
+
+        /* When direction in column then main axia(justify content) is  ⬆   and cross axis(align-item) is ➡*/
+        /* flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center; */
+
+        gap: 20px;
+
+        /* align content use when flex-wrap is defined as wrap */
+        /* flex-wrap: wrap;
+        align-content: end; */
+      }
+      .item {
+        width: 150px;
+        height: 150px;
+
+        background-image: linear-gradient(
+          to right bottom,
+          #1f49de,
+          #763bcc,
+          #9e2ab7,
+          #b71aa1,
+          #c8128b,
+          #d91977,
+          #e42d64,
+          #e94352,
+          #ee613c,
+          #ea7e26,
+          #df9a13,
+          #cdb518
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <section class="flex-container">
+      <div class="item flex-item1"></div>
+      <div class="item flex-item2"></div>
+      <div class="item flex-item3"></div>
+      <div class="item flex-item4"></div>
+    </section>
+  </body>
+</html>

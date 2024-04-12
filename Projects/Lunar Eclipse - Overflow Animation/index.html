@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lunar Eclipse</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: blue;
+
+        display: grid;
+        place-items: center;
+      }
+      .universe {
+        width: 40vw;
+        aspect-ratio: 1;
+        background-color: #ffa500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: skyChange 10s ease-out infinite;
+      }
+
+      .sun {
+        width: 20vw;
+        aspect-ratio: 1;
+        background-color: rgb(169, 56, 41);
+        border-radius: 50%;
+        position: relative;
+        /* we use overflow on the element or parent to hide it */
+        overflow: hidden;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: inherit;
+          aspect-ratio: 1;
+          border-radius: inherit;
+          background-color: black;
+
+          animation: moonWalk 10s ease-in-out infinite;
+          /* z-index: 1; */
+        }
+      }
+
+      @keyframes moonWalk {
+        0% {
+          translate: 100%;
+        }
+        50% {
+          scale: 0.9;
+          translate: 0%;
+          box-shadow: rgba(246, 246, 246, 0.25) 0px 54px 55px,
+            rgba(255, 250, 250, 0.12) 0px -12px 30px,
+            rgba(233, 228, 228, 0.12) 0px 4px 6px,
+            rgba(255, 255, 255, 0.905) 0px 12px 13px,
+            rgba(255, 255, 255, 0.817) 0px -3px 5px;
+        }
+        100% {
+          scale: 0.9;
+          translate: -100%;
+        }
+      }
+
+      @keyframes skyChange {
+        0% {
+          background-color: #ffa500;
+        }
+        25% {
+          background-color: #ffa500;
+        }
+        50% {
+          background-color: rgba(0, 0, 0, 0.736);
+        }
+        75% {
+          background-color: #ffa500;
+        }
+        100% {
+          background-color: #ffa500;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="universe">
+      <div class="sun"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Without viewport meta tag we can not make website response -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- To display the message when website get rank -->
+    <meta name="description" content="This the Basic HTML website page" />
+
+    <!-- Name who develope and owner of website -->
+    <meta name="author" content="Akshay Patil" />
+
+    <!-- To Rank the website on search -->
+    <meta name="robots" content="index, follow" />
+
+    <title>Basic HTML Website</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 1.5rem;
+      }
+      header {
+        display: flex;
+      }
+
+      ul {
+        display: flex;
+        gap: 20px;
+      }
+      ul li {
+        list-style-type: none;
+      }
+
+      ul li a {
+        font-size: 2rem;
+      }
+      [type="submit"] a {
+        text-decoration: none;
+      }
+
+      header img {
+        margin: 20px;
+      }
+      .our-story-images {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- our header -->
+    <header class="navigation">
+      <div class="logo" id="logo">
+        <a href="#">
+          <img src="/Media/Image/thapa/logo.png" alt="Thapa Technical logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- our hero component  -->
+      <section class="hero-component">
+        <h1>I am Vinod Bahadur Thapa aka Thapa Technical</h1>
+        <div class="hero-paragraph-content">
+          <p>
+            This website is all about Website Development, Technical, Tips and
+            Tricks, Designs Principle, Source Code sales and Programming videos
+            in the Hindi Language.
+          </p>
+          <button type="submit" value="See My Works">See My Works</button>
+          <button type="submit" value="visit youtube">
+            <a href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
+              >Visit Youtube</a
+            >
+          </button>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="/Media/Image/thapa/html.png"
+            alt="Thumbnail of HTML Course"
+            width="600"
+            height="auto"
+          />
+        </div>
+      </section>
+
+      <!--  our about section-->
+      <section class="about-section">
+        <div class="about-content">
+          <h2>About Thapa Technical 👍</h2>
+        </div>
+
+        <div class="about-para">
+          <p>It's great to meet you! I’m Thapa Technical.</p>
+          <p>
+            Thapa Technical is an amazing YouTube channel for learning web
+            development. Their tutorials are easy to follow and enjoyable. By
+            watching their videos, you can learn the skills needed for a web
+            development job. Check out Thapa Technical to boost your chances of
+            getting hired in this field!
+          </p>
+        </div>
+
+        <div class="about-skills">
+          <strong>My coding Knowledge</strong>
+          <div class="html">
+            <label for="html">HTML Code</label>
+            <progress id="html" max="100" value="100">100% HTML</progress>
+          </div>
+
+          <div class="css">
+            <label for="Css">Css Code</label>
+            <progress id="Css" max="100" value="100">100% CSS</progress>
+          </div>
+
+          <div class="Javascriptml">
+            <label for="Javascript">Javascript Code</label>
+            <progress id="Javascript" max="100" value="70">70% JS</progress>
+          </div>
+
+          <div class="MERN">
+            <label for="MERN">MERN Code</label>
+            <progress id="MERN" max="100" value="80">80% MERN</progress>
+          </div>
+        </div>
+      </section>
+
+      <!-- our story section -->
+      <section class="our_story-section">
+        <div class="our-story-header">
+          <h3>Our Stroy</h3>
+        </div>
+        <div class="our-story-images">
+          <figure>
+            <img
+              src="/Media/Image/thapa/html.png"
+              alt="HTML Course"
+              width="200px"
+              height="auto"
+            />
+            <figcaption>HTML Website Development</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="/Media/Image/thapa/css.png"
+              alt="CSS Course"
+              width="200px"
+              height="auto"
+            />
+            <figcaption>CSS Website Development</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="/Media/Image/thapa/js1.png"
+              alt="javaScript Course"
+              width="200px"
+              height="auto"
+            />
+            <figcaption>javaScript Website Development</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="/Media/Image/thapa/mern.png"
+              alt="MERN.png Course"
+              width="200px"
+              height="auto"
+            />
+            <figcaption>MERN Website Development</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="/Media/Image/thapa/React1.png"
+              alt="React Course"
+              width="200px"
+              height="auto"
+            />
+            <figcaption>React Website Development</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- our Blogs -->
+      <section class="blog-section">
+        <h3>My Blog</h3>
+
+        <article>
+          <header>
+            <h3>Elevate Your Web Development Skills with Thapa Technical</h3>
+          </header>
+
+          <div class="blog-intro">
+            <strong><em> Thapa Technical</em></strong> is an amazing YouTube
+            channel for learning web development. Their tutorials are easy to
+            follow and enjoyable. By watching their videos, you can learn the
+            skills needed for a web development job. Check out Thapa Technical
+            to boost your chances of getting hired in this field!
+          </div>
+
+          <div class="blog-about-thapa">
+            <h4>About Thapa Technical</h4>
+            Thapa Technical is an amazing YouTube channel for learning web
+            development. Their tutorials are easy to follow and enjoyable. By
+            watching their videos, you can learn the skills needed for a web
+            development job. Check out Thapa Technical to boost your chances of
+            getting hired in this field!
+          </div>
+
+          <div class="blog-tutor">
+            <h4>Unlock Your Potential with Easy-to-Follow Tutorials</h4>
+            Thapa Technical understands that learning web development can be
+            daunting, especially for beginners. That's why their tutorials are
+            thoughtfully designed to be easy to follow, ensuring that even the
+            most complex concepts are broken down into manageable steps. Whether
+            you're a seasoned developer or just starting out, you'll find their
+            tutorials to be a breath of fresh air in the world of online
+            learning.
+          </div>
+
+          <div class="blog-experience">
+            <h4>Enjoyable Learning Experience</h4>
+            Learning doesn't have to be a tedious process. Thapa Technical has
+            seamlessly blended education with entertainment, making the learning
+            journey not only productive but enjoyable as well. Their engaging
+            teaching style and relatable examples make even the most challenging
+            topics seem approachable. You'll find yourself looking forward to
+            each new video, eager to absorb more knowledge.
+          </div>
+
+          <!-- Your Gateway to Web Development Success
+Dreaming of a career in web development? Thapa Technical equips you with the skills that employers are looking for. From HTML and CSS to JavaScript and beyond, their tutorials cover a wide range of technologies and techniques that are essential in today's competitive job market. By following their videos, you'll be well-prepared to tackle real-world development challenges.
+
+Boost Your Employability with Thapa Technical
+In the dynamic world of web development, staying ahead of the curve is crucial. Thapa Technical not only helps you stay current with the latest industry trends but also provides you with practical skills that can set you apart from the competition. Whether you're aiming to switch careers or enhance your existing skills, Thapa Technical can be your key to unlocking new opportunities.
+
+Don't miss out on the chance to enhance your web development skills and open doors to exciting career prospects. Check out Thapa Technical on YouTube today and take the first step towards a brighter future in the world of web development! -->
+        </article>
+        <p>Thank You for reading till the end</p>
+      </section>
+
+      <!-- audio music section -->
+      <section class="audio-section">
+        <div class="audio-para">
+          <p>
+            <em>
+              I have also added web development podcast on my thapa technical
+              website click on play button to play</em
+            >
+          </p>
+        </div>
+        <div class="audio">
+          <audio controls muted>
+            <source src="/Media/Audio/audio_thapa.mp3" type="audio/mpeg" />
+            <source src="/Media/Audio/audio_thapa.wav" type="audio/wav" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </section>
+
+      <section class="other-blogs">
+        <p>Hope you like my other blogs too.</p>
+
+        <ul>
+          <li style="list-style-type: none">
+            <a href="#"> Please subscribe to our youtube channel</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="map-section">
+        <div class="our-map">
+          <p><strong>ContentStack Map</strong></p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.9123507983436!2d72.7978746758442!3d19.45934543982493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9add522a77d%3A0x91246ef8dd1585a2!2sContentstack%20India%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1708425579815!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="contact-us">
+        <p>Please add contact-us form here</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Copyright &copy;2023 All rights reserved | This template is made with ❤
+        by Thapa Technical
+      </p>
+    </footer>
+  </body>
+</html>

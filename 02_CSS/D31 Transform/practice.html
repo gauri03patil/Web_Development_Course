@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&family=Quicksand:wght@300;400;500;600;700&family=Urbanist:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      div {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        width: 500px;
+        height: auto;
+
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+        transition: all 1s linear;
+      }
+
+      img:hover {
+        /*? Translate - Property allow to move the object to x, y z direction */
+        /* transform: translate(400px); */
+
+        /* translate previously we are writing in transpform but now we can directly write outside
+         translate: x y z */
+        /* translate: 400px; */
+        /* translate: 0 -200px; */
+        /* translate: 100px 20px; */
+        /* translate: 10px 20px 40px; */
+
+        /*? sclare : it is use to scale the image wider or smaller and 1 it will keep image in same size*/
+        /* transform: scale(1); */
+
+        /*? Larger Image */
+        /* scale: 2;    */
+        /* scale: 0.4; */
+
+        /* Rotate -- It will roated the image in different direction 0 to 360 deg or turn */
+
+        /* transform: rotate(100deg); */
+        /* rotate: 90deg; */
+        /* or  rotate: x 90deg;  */
+
+        /* rotate: y 180deg; */
+        /* rotate: z 180deg; */
+        /* rotate: -90deg; */
+
+        /* transform origin : we specify the origin point from where the image rotate */
+        /* transform-origin: left;
+        scale: 0.4;
+        rotate: y -360deg;
+        translate: 100px; */
+
+        /* skew -- we specify degree*/
+
+        /* transform: skew(45deg); */
+        transform: skew(45deg, -30deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="box" src="/Media/Image/css/html.png" alt="" srcset="" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="" /> -->
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <!-- it's a comment node  -->
+  <body>
+    <div>
+      <h1>Simple DOM Todo App</h1>
+      <form action="">
+        <input type="text" id="inputField" required />
+        <button class="btn">click me</button>
+      </form>
+      <div class="todoListsElem"></div>
+    </div>
+
+    <script>
+      let inputElem = document.getElementById("inputField");
+      let butElem = document.querySelector(".btn");
+
+      let todoElem = document.querySelector(".todoListsElem");
+
+      //   inputElem.addEventListener("all", () => {
+      //     let text = inputElem.value;
+      //     if (text.length > 0) {
+      //       butElem.removeAttribut;
+      //     }
+      //   });
+
+      const addTo = () => {
+        console.log(inputElem.value);
+        let pElem = document.createElement("p");
+        pElem.textContent = inputElem.value;
+        todoElem.append(pElem);
+        inputElem.value = "";
+      };
+      butElem.addEventListener("click", () => {
+        addTo();
+      });
+      todoElem.addEventListener("click", (event) => {
+        console.log(event.target);
+        let deleteElement = event.target;
+        deleteElement.remove();
+      });
+    </script>
+  </body>
+</html>

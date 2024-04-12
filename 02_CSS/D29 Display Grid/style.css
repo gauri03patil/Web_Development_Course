@@ -1,0 +1,44 @@
+.container {
+  border: 2px solid grey;
+
+  /* First We add Grid Display */
+  display: grid;
+
+  /* Then We specify the Number of Coloumn and Row with size */
+  /* grid-template-columns: 300px 200px 150px; */
+  /* grid-template-rows: 100px 200px 300px; */
+
+  /* Grid Naming */
+  grid-template-columns: [Column-1] 300px [Column-2] 200px [Column-3] 150px [Column-4];
+  grid-template-rows: [Row-1] 100px [Row-2] 200px [Row-3] 300px [Row-4] [Row-End];
+}
+
+.items {
+  border: 2px solid black;
+  background-color: aqua;
+  width: 60px;
+  /* height: 100px; */
+  margin: 4px 10px;
+}
+
+/* Place the Single Item at specfic row and coloumn number using grid line */
+.item6 {
+  /* grid-row: 3/4; */
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.item10 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+/* Grid Overlapping */
+.item7 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.item1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}

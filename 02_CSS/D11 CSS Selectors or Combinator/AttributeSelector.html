@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>attribute Selector</title>
+
+    <style>
+      /* Attribute present selector */
+      [type] {
+        color: red;
+      }
+
+      /* Selecting by Exact Attribute Value  */
+      [id="title"] {
+        font-size: 20px;
+        color: lightgreen;
+      }
+
+      /* Selecting by Partial Attribute Value */
+      video[src*="MP4"] {
+        height: 100px;
+        width: 100px;
+      }
+
+      /* Selecting by Prefix Attribute Value */
+      a[href^="https://g"]
+      {
+        color: brown;
+      }
+
+      /* Selecting by Suffix Attribute Value */
+
+      a[href$="gram.com"] {
+        color: black;
+        font-size: 30px;
+        padding-left: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <p type="text">Lorem ipsum dolor sit.</p>
+
+    <h1 id="title">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus,
+      reprehenderit?
+    </h1>
+    <a href="https://google.com">Google</a>
+    <a href="https://Yahoo.com">Yahoo</a>
+    <a href="https://facebook.com">Yahoo</a>
+    <a href="https://gmail.com">gmail</a>
+    <a href="https://instagram.com">Instagram</a>
+    <a href="https://netgram.com">Netgram</a>
+
+    <video src="/Media/Video/MP4_Vide0.mp4">Avi</video>
+  </body>
+</html>

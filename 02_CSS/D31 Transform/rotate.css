@@ -1,0 +1,76 @@
+.container {
+  border: 2px solid black;
+  width: 80vw;
+  height: 90vh;
+  margin: 30px auto;
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 40px;
+}
+
+.box {
+  border: 2px solid purple;
+  background-color: bisque;
+  width: 100px;
+  height: 100px;
+  font-weight: bolder;
+  font-size: 34px;
+
+  /* Transofrmation Propert */
+
+  /* transform: initial; */
+
+  /* transform: rotate(); */
+}
+
+.box2 {
+  transform: rotate(90deg);
+  /* or */
+  /* transform: rotate(-270deg); */
+}
+.box3 {
+  transform: rotate(180deg);
+}
+
+.box4 {
+  transform: rotate(270deg);
+
+  /* or  */
+  /* transform: rotate(-90deg); */
+}
+
+.box5 {
+  /* align-self: center; */
+  transform: rotateX(80deg);
+  /* transform: rotateX(270deg); */
+
+  /* Invisble - as it align on strate line    Roated down */
+}
+
+.box6 {
+  /* align-self: center; */
+  transform: rotateX(180deg);
+  /* transform: rotateX(180deg); */
+}
+
+.box7 {
+  /* Rotated right side  -- invisilble for 90 or 270 */
+  /* transform: rotateY(90deg); */
+  transform: rotateY(80deg);
+}
+
+.box8 {
+  transform: rotateY(180deg);
+}
+
+.box9 {
+  transform: rotateZ(70deg);
+}
+
+.box10 {
+  transform: rotateZ(180deg);
+}
+
+.box11 {
+  transform: rotate3d(1, 0, 2, 70deg);
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <h1>JS Window Obj</h1>
+
+    <!--? ========== Start Window Property ========== -->
+
+    <!-- <button
+      onclick="window.open('https://www.w3schools.com/js/default.asp', '_blank')"
+    > -->
+
+    <button
+      onclick="window.open('https://www.w3schools.com/js/default.asp', '_self')"
+    >
+      Navigate
+    </button>
+    <!--? ========== End Window Property ========== -->
+
+    <!--? ========== Start History ========== -->
+    <h1>JavaScript History Object</h1>
+    <button onclick="history.back()">Go Back</button>
+    <button onclick="history.forward()">Go Forward</button>
+    <button onclick="history.go(-1)">Move Backward or forward</button>
+
+    <!--  go(1) : it will move forwards
+          go(-1)  it will redirect you backward
+         -->
+    <!--? ========== End History ========== -->
+
+    <!--? ========== Start Location ========== -->
+    <h1>JavaScript Location Object</h1>
+    <button onclick="location.reload()">Reload the Page</button>
+    <button
+      onclick="window.location.replace('https://www.thapatechnical.com/')"
+    >
+      Navigate Page using replace
+    </button>
+    <!--* Purpose: Assigns a new URL to the current window, effectively navigating to a new page. -->
+    <button onclick="location.assign('https://kodyfier.com/')">
+      Navigate Page with Assign
+    </button>
+
+    <button onclick="console.log(location.host);">Host URL</button>
+
+    <button onclick="console.log(location.hostname);">Host Name</button>
+
+    <button onclick="console.log(location.protocol);">Protocol</button>
+
+    <button onclick="console.log(location.port);">Port</button>
+
+    <!--? ========== End Location ========== -->
+
+    <!--? ========== Start Screen ========== -->
+    <h1>JavaScript Screen Object</h1>
+    <p>We will see in console.</p>
+
+    <button onclick="console.log(screen.orientation);">orientation</button>
+    <button onclick="console.log(screen.availHeight);">Available height</button>
+    <button onclick="console.log(screen.availWidth);">available Width</button>
+    <button onclick="console.log(screen.width);">width</button>
+    <button onclick="console.log(screen.height);">height</button>
+    <button onclick="console.log(screen.pixelDepth);">PixelDepth</button>
+
+    <!--? ========== End Screen ========== -->
+
+    <script>
+      window.alert("welcome to the js course ");
+    </script>
+  </body>
+</html>

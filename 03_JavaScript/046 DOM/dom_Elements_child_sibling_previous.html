@@ -1,0 +1,118 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1>Best JS Course</h1>
+    <p>DOM Tree Structure</p>
+  </body>
+</html>
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Best JS Course</title>
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;800&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+    <h1>Best JS Course</h1>
+    <p>Understanding The DOM Tree Structure</p>
+    <hr />
+    <p>It's easy. Helps JS to communicate with HTML</p>
+
+    <header class="section-navbar">
+      <div class="nav-container container">
+        <div class="brand-logo">
+          <a href="index.html">
+            <img src="./Images/logo.png" alt="" width="80%" height="auto" />
+          </a>
+        </div>
+
+        <nav class="navbar" id="navbar">
+          <ul class="nav-items" id="nav-links">
+            <li class="nav-item nav-link" id="home">
+              <a href="index.html">home</a>
+            </li>
+            <li class="nav-item nav-link" id="blog">
+              <a href="./blog.html">blog</a>
+            </li>
+            <li class="nav-item nav-link" id="service">
+              <a href="./service.html">service</a>
+            </li>
+            <li class="nav-item nav-link" id="about">
+              <a href="./about.html">about</a>
+            </li>
+            <li class="nav-item nav-link" id="contact">
+              <a href="./contact.html">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- * Let's see DOM Navigation -->
+    <script>
+      let parent = document;
+      let htmlBody = document.body;
+      let htmlHead = document.head;
+
+      console.log(htmlHead);
+      console.log(htmlBody);
+
+      //? ChildNodes and Children
+      //? ChildNodes --> Return All the child nodes like text h1 text etc and return in nodeList array
+      //children -- return only HTML Element
+
+      console.log("===== childNodes & children ==== ");
+
+      let bodyChild = htmlBody.childNodes;
+      let bodyChildren = htmlBody.children;
+
+      console.log(bodyChild);
+      console.log(bodyChildren);
+      // To get specific element from childe we use array index
+      console.log(bodyChildren[4]);
+
+      //FirstElementChild = return first HTMLElement from body or from given Element
+      //firstchild == return nodelist of first child as
+
+      console.log("===== firstElementChild & firstchild ==== ");
+      let firstChildElement = htmlBody.firstElementChild;
+      let firstChild = htmlBody.firstChild;
+
+      console.log(firstChild);
+
+      console.log(firstChildElement);
+
+      console.log("===== lastElementChild & lastchild ==== ");
+
+      let lastChildElement = htmlBody.lastElementChild;
+      let lastChild = htmlBody.lastChild;
+
+      console.log(lastChild);
+      console.log(lastChildElement);
+
+      console.log("===== nextElementSibling & nextSibling ==== ");
+
+      let elementSibling = firstChildElement.nextElementSibling;
+
+      let nodeSibling = firstChildElement.nextSibling;
+
+      console.log(elementSibling);
+      console.log(nodeSibling);
+
+      let previousSibling = nodeSibling.previousElementSibling;
+
+      let parentNode = previousSibling.parentElement;
+
+      console.log(previousSibling);
+      console.log(parentNode);
+    </script>
+  </body>
+</html>

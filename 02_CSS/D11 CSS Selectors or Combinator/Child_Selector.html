@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child selector</title>
+    <style>
+      section > p {
+        background-color: aquamarine;
+        color: blue;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Child Selector :</h1>
+
+    <section>
+      <h2>Example 1:Direct Child</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <div>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae,
+          voluptatibus?
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Example 2: Direct-Nested child</h2>
+      <p>Lorem, ipsum dolor.</p>
+      <section>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+      </section>
+    </section>
+  </body>
+</html>

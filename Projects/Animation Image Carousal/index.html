@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousal</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+
+        /* parent center */
+        display: grid;
+        place-items: center;
+      }
+
+      html {
+        font-size: 60.5%;
+      }
+
+      .parent {
+        width: 98vh;
+        height: 50rem;
+        border: none;
+        border-radius: 15px;
+
+        box-shadow: 6px 4px 10px 0px grey;
+
+        background-image: url(/Media/Image/river.jpg);
+        background-size: cover;
+        animation: gallery 30s linear infinite;
+      }
+
+      /* img {
+        width: 98vh;
+        object-fit: cover;
+      } */
+
+      @keyframes gallery {
+        0% {
+          background-image: url(/Media/Image/paitning.avif);
+        }
+        20% {
+          background-image: url(/Media/Image/autumn-poolside.jpg);
+        }
+        40% {
+          background-image: url(/Media/Image/free-nature-images.jpg);
+        }
+        60% {
+          background-image: url(/Media/Image/hand.jpg);
+        }
+        80% {
+          /* background-image: url(/Media/Image/Mumbai.jpg); */
+        }
+        100% {
+          background-image: url(/Media/Image/river.jpg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <!-- <img src="/Media/Image/river.jpg" alt="" /> -->
+    </div>
+  </body>
+</html>

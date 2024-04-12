@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  /* radial Gradient - creates an image consisting of a progressive transition between two or more colors that radiate from an origin. Its shape may be a circle or an ellipse */
+
+  /* background-image: radial-gradient(circle, red, yellow); */
+
+  /* ellipses */
+  /* background-image: radial-gradient(ellipse, red, yellow); */
+
+  /* Percentage */
+  /* background-image: radial-gradient(
+    circle,
+    red 20%,
+    rgba(255, 255, 0, 0.7) 50%,
+    blue
+  ); */
+
+  /* A gradient at the center of its container,
+   starting red, changing to blue, and finishing green */
+
+  background-image: radial-gradient(circle at center, red 0, blue, green 100%);
+
+  /* Repeat-propert */
+  background-image: repeating-radial-gradient(circle, red 40%, yellow, blue);
+
+  /* background-image: radial-gradient(ellipse, red, yellow); */
+  /* background-image: radial-gradient(ellipse, red, yellow); */
+  /* background-image: radial-gradient(ellipse, red, yellow); */
+}

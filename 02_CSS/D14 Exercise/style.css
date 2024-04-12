@@ -1,0 +1,19 @@
+/* div p:nth-child(1) {
+  color: red;
+  background-color: yellow;
+} */
+
+/* div:nth-child(2) p:nth-child(1) {
+  color: white;
+  background-color: blue;
+} */
+
+div > p:first-child {
+  color: red;
+  background-color: yellow;
+}
+
+div > p:not(:first-child) {
+  color: white;
+  background-color: blue;
+}

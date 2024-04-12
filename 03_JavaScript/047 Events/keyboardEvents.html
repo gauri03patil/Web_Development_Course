@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard Events</title>
+  </head>
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+    }
+    input {
+      width: 280px;
+      padding: 10px;
+    }
+    .data {
+      border-left: 6px solid white;
+      margin: 20px;
+      background-color: grey;
+      border-radius: 4px;
+      width: 300px;
+    }
+    p {
+      color: white;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <input type="text" id="word" placeholder="Enter Char or Text" />
+
+      <div class="data">
+        <p id="press">Key Pressed:</p>
+        <p id="code">Key code:</p>
+        <p id="char">Char Code:</p>
+        <p id="type">Key Type:</p>
+      </div>
+    </div>
+  </body>
+  <script>
+    let text = document.getElementById("word");
+
+    //keydown, keyup
+    text.addEventListener("keypress", (event) => {
+      console.log(event);
+      console.log(event.key);
+
+      document.getElementById(
+        "press"
+      ).textContent = `Key Pressed: ${event.key}`;
+      document.getElementById("code").textContent = `Key Code: ${event.code}`;
+      document.getElementById(
+        "char"
+      ).textContent = `Char Code: ${event.charCode}`;
+      document.getElementById("type").textContent = `Key Type: ${event.type}`;
+
+      //   console.log(event.code);
+      //   console.log(event.charCode);
+      //   console.log(event.type);
+    });
+  </script>
+</html>

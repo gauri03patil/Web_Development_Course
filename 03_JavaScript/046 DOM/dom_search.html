@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      button,
+      input {
+        font-family: "Urbanist", sans-serif;
+      }
+    </style>
+  </head>
+  <!-- it's a comment node  -->
+  <body>
+    <div>
+      <h1 id="heading">DOM API</h1>
+      <ul class="list-of--nodes">
+        <li>1 node</li>
+        <li>2 node</li>
+        <li>3 node</li>
+        <!-- <li>4th node </li> -->
+        <li>4 node</li>
+        <li style="display: none">5 node</li>
+      </ul>
+    </div>
+    <div>
+      <h1>DOM API 2</h1>
+      <input type="text" />
+      <button>click me</button>
+      <div class="value"></div>
+    </div>
+    <script>
+      // Get Element by id
+
+      console.log("Get Element by ID");
+      let byID = document.getElementById("heading");
+      console.log(byID);
+      console.log(byID.innerHTML); //returning text bcz it doesnot contain inner text
+      console.log(byID.innerText); //✅
+      console.log(byID.textContent); // ot return display:none and comment as blank space
+
+      console.log("Get Element by classname");
+
+      let byClass = document.getElementsByClassName("list-of--nodes");
+      console.log(byClass);
+      //   console.log(...byClass);
+
+      for (const iterator of byClass) {
+        console.log(iterator.children);
+      }
+
+      console.log("Get Element by tags");
+      let byTags = document.getElementsByTagName("li");
+      console.log(byTags);
+      for (const iterator of byTags) {
+        console.log(iterator);
+      }
+
+      //
+      console.log("Best Example Of Inner HTML, InnerText, textContent");
+      for (const iterator of byClass) {
+        console.log(`Inner HTML \n`, iterator.innerHTML);
+        console.log(`Inner Text \n \n`, iterator.innerText);
+        console.log(`TextContent \n`, iterator.textContent);
+      }
+
+      console.log("Query Selector");
+
+      let getById = document.querySelector("#heading"); //using ID
+      let getByClass = document.querySelector(".list-of--nodes"); //using class
+      let getBytags = document.querySelectorAll("li"); //using tag
+
+      console.log(`By ID \n`, getById);
+      console.log(`By class \n`, getByClass);
+      console.log(`By TAgs \n`, getBytags);
+      console.log(getByClass.lastElementChild);
+      console.log(getByClass.firstElementChild);
+      console.log(getById.nextElementSibling);
+
+      console.log(`Change content of text using textconent`);
+      getById.textContent = "Hello Welcome to Akshay world";
+
+      //   getById.innerText = "Welcome to New Course";
+    </script>
+  </body>
+</html>

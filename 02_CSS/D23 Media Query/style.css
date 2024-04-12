@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+:root {
+  --mobile: 450px;
+  --tablet: 768px;
+  --fullscreen: 1024;
+  --border: 2px solid red;
+  --padding: 10px;
+  --margin: 10px;
+}
+
+.boxes {
+  width: 100vw;
+  /* background-color: aqua; */
+}
+.box1 {
+  width: 90vw;
+  border: var(--border);
+  padding: var(--padding);
+  margin: var(--margin);
+}
+
+.box2 {
+  width: 90vw;
+  border: var(--border);
+  padding: var(--padding);
+  margin: var(--margin);
+}
+/* https://www.w3schools.com/css/css3_mediaqueries.asp
+ */
+
+/* https://www.w3schools.com/css/css3_mediaqueries_ex.asp */
+
+/* Media Query */
+@media screen and (min-width: 451px) and (max-width: 768px) {
+  .box1,
+  .box2 {
+    border: 2px solid gray;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .box1,
+  .box2 {
+    border: 2px solid blue;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .box1,
+  .box2 {
+    border: 2px solid rgb(199, 231, 23);
+  }
+}
+
+@media print {
+  .box1,
+  .box2 {
+    border: 2px solid rgb(22, 230, 22);
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,147 @@
+body {
+  /* font-family: "Segoe UI"; */
+  font-family: "Segoe UI", serif;
+  font-size: 16px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.items ul {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  padding: 5px;
+}
+
+li.link::after {
+  content: url(/Media/SVG/down-arrow.svg);
+  padding: 5px;
+  vertical-align: middle;
+}
+
+/* Hero Banner */
+.herobanner {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto 80px;
+  padding: 30px 10px;
+  gap: 20px 10px;
+}
+.herobanner span {
+  font-size: 2.15rem;
+  /* font-weight: 500; */
+  line-height: 3rem;
+}
+
+.herobanner p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  /* line-height: 3rem; */
+}
+.herobanner .btn a {
+  color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.downloads {
+  display: grid;
+
+  width: 100vw;
+  margin: auto 80px;
+
+  grid-template-columns: 1fr;
+  /* border: 2px solid black; */
+  gap: 20px;
+
+  text-align: center;
+}
+
+.regions {
+  padding: 26px;
+  /* border: 1px solid black; */
+  background-color: #f9f9f9;
+}
+
+.btn {
+  border: none;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  /*background-color: #00b6d1;
+  */color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.primary {
+  background-color: #00b6d1;
+}
+/* .regions .primary {
+  background-color: #00b6d1;
+} */
+
+.secondary {
+  background-color: #5cb85c;
+}
+
+/* .regions .secondary {
+  background-color: #5cb85c;
+} */
+.regions a {
+  text-decoration: none;
+}
+.regions h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.regions small {
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .herobanner {
+    width: 50vw;
+    margin: auto;
+  }
+  .herobanner p {
+    font-size: 1.5rem;
+    /* font-weight: 500; */
+    /* line-height: 3rem; */
+  }
+
+  .herobanner span {
+    font-size: 3rem;
+    /* font-weight: 500; */
+  }
+  .btn {
+    font-size: 0.9rem;
+  }
+  .downloads {
+    grid-template-columns: 1fr 1fr;
+    width: 60vw;
+    margin: auto;
+  }
+}

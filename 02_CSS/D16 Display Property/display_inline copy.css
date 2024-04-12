@@ -1,0 +1,9 @@
+.box {
+  display: inline;
+  padding: 20px;
+  border: 2px solid;
+  margin: 20px;
+}
+p {
+  display: inline;
+}

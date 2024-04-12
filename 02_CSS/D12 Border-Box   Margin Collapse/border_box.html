@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Border Box Model</title>
+    <style>
+      .content_box {
+        /* Default value content-box we do not need to mention it. */
+        box-sizing: content-box;
+        height: 200px;
+        width: 200px;
+        padding: 10px;
+        margin: 5px;
+        border: 2px solid red;
+        background-color: blue;
+      }
+
+      .border_box {
+        box-sizing: border-box;
+        height: 200px;
+        width: 200px;
+
+        padding: 10px;
+        margin: 5px;
+        border: 2px solid green;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content_box">
+      <h1>Lorem, ipsum.</h1>
+    </div>
+    <div class="border_box">
+      <h1>Lorem, ipsum.</h1>
+    </div>
+  </body>
+</html>

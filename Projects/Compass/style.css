@@ -1,0 +1,52 @@
+:root {
+  /* Root Variable  */
+
+  --padding: 20px;
+  --text_color: #0000ff;
+  --main_font: Montserrat, sans-serif;
+
+  /* --tablet-breakpoint: 768px;
+  --desktop-breakpoint: 1024px;
+  --mobile-breakpoint: 360px;
+  --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main_font);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  padding: var(--padding);
+}
+ul {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+  list-style-type: none;
+  /* color: #000000; */
+}
+
+li a {
+  /* To Remove underline of text */
+  text-decoration: none;
+  font-weight: 600;
+  color: #000000;
+}
+li a img {
+  width: 10px;
+}
+.logo {
+  align-self: flex-start;
+}
+
+#articles {
+  margin-right: 20px;
+}

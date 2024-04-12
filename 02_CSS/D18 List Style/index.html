@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Style Property</title>
+    <style>
+      ul li {
+        /* Specifies the appearance of the list item marker.  */
+        list-style-type: "🙏";
+        background-color: yellow;
+        list-style-position: inside;
+        list-style-image: url("/Media/SVG/circle.svg");
+      }
+      ul li::after {
+        content: "💭";
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navigation" class="nav">
+      <ul>
+        <li class="navItem">Home</li>
+        <li class="navItem">About</li>
+        <li class="navItem">Contact</li>
+      </ul>
+    </nav>
+  </body>
+</html>

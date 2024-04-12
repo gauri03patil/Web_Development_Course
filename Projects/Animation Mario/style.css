@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/Media/Image/css/mario-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* position: relative; */
+
+  /* animation: marioRun 3s linear  ; */
+  animation: marioRun 10s linear infinite alternate;
+}
+
+img {
+  width: 150px;
+  /* aspect-ratio: 1; */
+  position: absolute;
+  bottom: 8.75%;
+}
+
+@keyframes marioRun {
+  from {
+    translate: 0%;
+  }
+  to {
+    translate: calc(100vw - 150px);
+  }
+}
+
+/* body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("../../images/mario-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+} */
+
+/* img {
+  width: 200px;
+  position: absolute;
+  bottom: 8.7%;
+  animation: mariorun 3s linear infinite;
+}
+@keyframes mariorun {
+  0% {
+    translate: 0%;
+  }
+  100% {
+    translate: calc(100vw - 200px);
+  }
+} */

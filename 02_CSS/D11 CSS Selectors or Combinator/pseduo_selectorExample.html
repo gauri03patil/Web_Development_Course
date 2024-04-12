@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseduo Selector</title>
+
+    <style>
+      /* Active Selector :active */
+      a:active {
+        color: green;
+      }
+      a:visited {
+        color: brown;
+      }
+      a:hover {
+        color: tomato;
+      }
+      p:empty {
+        /* border: 1px solid red; */
+        display: none;
+      }
+      #paragraph::first-letter {
+        /* text-transform: uppercase; */
+        font-size: 30px;
+        text-transform: capitalize;
+      }
+      #name li::before {
+        content: "Important:";
+        font-weight: bold;
+      }
+
+      #number li::after {
+        content: " - Number";
+      }
+
+      #number li::selection {
+        background-color: aqua;
+      }
+
+      /* input:valid {
+        border: 2px solid green;
+      } */
+      input:invalid {
+        border: 2px solid red;
+      }
+      ::placeholder {
+        font-size: 10px;
+        color: blue;
+      }
+      :valid {
+        border: 2px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="https://google.co">google</a></li>
+      <li><a href="https://facebook.co">facebook</a></li>
+      <li><a href="https://yahoo.co">yahoo</a></li>
+      <!-- <li><a href="/"></a></li> -->
+    </ul>
+
+    <p></p>
+    <p id="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, omnis.
+    </p>
+
+    <ul id="name">
+      <li>Alpha</li>
+      <li>beta</li>
+      <li>gama</li>
+    </ul>
+
+    <ul id="number">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+
+    <!-- Form -->
+
+    <form action="/submit" method="post">
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        required
+        placeholder="Enter Text"
+      />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <label>Gender:</label>
+      <label
+        ><input type="radio" name="gender" value="male" required /> Male</label
+      >
+      <label
+        ><input type="radio" name="gender" value="female" required />
+        Female</label
+      >
+
+      <label>Hobbies:</label>
+      <label
+        ><input type="checkbox" name="hobbies" value="reading" /> Reading</label
+      >
+      <label
+        ><input type="checkbox" name="hobbies" value="coding" /> Coding</label
+      >
+      <label
+        ><input type="checkbox" name="hobbies" value="traveling" />
+        Traveling</label
+      >
+
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="usa">United States</option>
+        <option value="canada">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <!-- Add more options as needed -->
+      </select>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

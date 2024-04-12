@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Most Important Used Selectors</title>
+    <style>
+      /* Unniversal Selectors */
+      * {
+        margin: 10;
+        padding: 10;
+      }
+      /* Class Selectors */
+      .fruits {
+        background-color: wheat;
+        color: blue;
+      }
+      /* ID Selector */
+      #id1 {
+        background-color: aquamarine;
+      }
+      /* Child Selector  */
+      div > p {
+        background-color: red;
+      }
+      ul > li {
+        list-style-type: upper-alpha;
+      }
+
+      /* Descendent child  */
+
+      section span {
+        color: blueviolet;
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Most Important used CSS selectors</h1>
+
+    <!-- universal Selector - * targets all elements. -->
+    <h3>* Universal Selector</h3>
+    <p>It will target every html selector and we use * icon as *{}</p>
+
+    <h3>. Class Selectors</h3>
+
+    <!-- class selector - we use dot icon (.) to target all classes -->
+    <p class="fruits">
+      The class selector (.) is used to select and style HTML elements that have
+      a specific class attribute.
+    </p>
+
+    <h3># ID Selector</h3>
+    <p id="id1">
+      The ID selector (#) is used to select and style a specific HTML element
+      with a unique identifier.
+    </p>
+
+    <h3>> Child Selector (immediate children)</h3>
+    <div>
+      <p>
+        The child selector (>) is used to select and style the direct children
+        of a specified parent element
+      </p>
+    </div>
+
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+
+    <h3>(Whitespace) Descendent Selector</h3>
+
+    <section>
+      <div>
+        <span> I am a Span inside div</span>
+      </div>
+      <article>
+        <span>I am span inside article</span>
+      </article>
+    </section>
+  </body>
+</html>

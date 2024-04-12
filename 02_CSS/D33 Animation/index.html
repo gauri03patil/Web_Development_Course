@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 60vw;
+        height: 70vh;
+        margin: 40px auto;
+        background-color: wheat;
+      }
+      .box {
+        width: 50px;
+        height: 50px;
+        background-color: blueviolet;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation-name: animation1;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-timing-function: cubic-bezier(0.13, 0.06, 0.58, 1);
+        /* animation-timing-function: ease-in-out; */
+        animation-iteration-count: infinite;
+        animation-fill-mode: infinit;
+        animation-direction: alternate-reverse;
+        /* animation-play-state: paused; */
+        /* animation-fill-mode: forwards; */
+
+        /* animation: animation1 6s ease-in-out 1s 1,
+          percentage 6s ease-in-out 1s 1; */
+      }
+
+      @keyframes animation1 {
+        from {
+        }
+        to {
+          transform: translateX(55vw) translateY(60vh);
+          background-color: azure;
+        }
+      }
+
+      @keyframes percentage {
+        0% {
+          transform: rotate(60deg);
+        }
+        20% {
+          transform: rotate(150deg);
+        }
+        40% {
+          transform: rotate(180deg);
+        }
+        60% {
+          transform: rotate(270deg);
+        }
+        80% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">box</div>
+    </div>
+  </body>
+</html>

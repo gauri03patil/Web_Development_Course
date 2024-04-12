@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Fit</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        flex-direction: row;
+      }
+      .container {
+        width: 560px;
+        height: 580px;
+
+        margin: 160px auto;
+        background-color: aqua;
+
+        border: 2px solid red;
+      }
+
+      img {
+        width: 560px;
+        height: 580px;
+        object-fit: cover;
+        /* object-fit: fill; */
+        /* object-fit: scale-down; */
+        /* object-fit: contain; */
+
+        /* Object Position */
+        /* object-position: top right; */
+        /* object-position: bottom right; */
+        /* object-position: bottom left; */
+      }
+
+      .bgImg {
+        background-color: none;
+        margin-top: 10px;
+        width: 860px;
+        height: 880px;
+        background-image: url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=1380&t=st=1707053540~exp=1707054140~hmac=3c15f5fb7e5e747b682b811a2cfa6375edbdcb2ae19eef25394e55e4643fef68");
+
+        background-repeat: no-repeat;
+        /* background-size: auto; */
+
+        background-clip: content-box;
+
+        background-position: center center;
+
+        /* background-position: bottom left; */
+        /* background-position: bottom right; */
+        /* background-position: top left; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=1380&t=st=1707053540~exp=1707054140~hmac=3c15f5fb7e5e747b682b811a2cfa6375edbdcb2ae19eef25394e55e4643fef68"
+        alt=""
+      />
+    </div>
+
+    <div class="container bgImg"></div>
+  </body>
+</html>

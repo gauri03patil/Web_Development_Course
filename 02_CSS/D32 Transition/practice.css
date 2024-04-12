@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+
+body {
+  background-color: #080a0c;
+  color: azure;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1320px;
+  padding: 64px 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 64px;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  text-align: left;
+}
+
+.hero-content p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 20px 0 40px 0;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+a {
+  background-color: transparent;
+  display: inline-block;
+  padding: 12px 32px;
+  text-decoration: none;
+  border-radius: 05px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 5px solid #fff;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+  /*?TRANSITIONCODESTARTSHERE*/
+  /*transition-property: width, color, background-color;
+  /*transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 2s;
+  */ /*transition: all 1s linear;
+ 
+  */ /*?Transition*/
+
+  /*?Appling Transition on single property*/
+  /*transition-property: width;
+  transition-duration: 1s;
+  transition-delay: 1s;
+  transition-timing-function: linear;
+*/
+
+  /*Apply tansition on all property*/
+
+  transition: all 1s linear;
+}
+
+.hero-content a:hover {
+  background-color: white;
+  color: black;
+  width: 300px;
+}
+
+img {
+  transition: scale 1s 0.5s linear;
+}
+img:hover {
+  scale: 1.5;
+}
+
+.hero-content h1 {
+  transition: all 1s linear;
+}
+.hero-content h1:hover {
+  font-size: 60px;
+  text-shadow: 200px -70px 5px rgba(179, 50, 50, 0.49);
+}
+/* 
+.hero-content a:hover {
+  background-color: blue;
+  color: #fff;
+  width: 400px;
+  box-shadow: rgba(255, 255, 255, 0.8) 0px 19px 38px,
+    rgba(255, 255, 255, 0.5) 0px 15px 12px;
+}
+
+
+img {
+}
+img:hover {
+  scale: 1.2;
+} 
+*/

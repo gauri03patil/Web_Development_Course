@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Universal Selector */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Type Selector */
+      p {
+        color: blue;
+      }
+
+      /* Class Selector */
+      .highlight {
+        background-color: yellow;
+      }
+
+      /* ID Selector */
+      #header {
+        font-size: 24px;
+      }
+
+      /* Attribute Selector */
+      [required] {
+        border: 1px solid red;
+      }
+
+      /* Attribute Selector */
+      [type="text"] {
+        width: 200px;
+      }
+
+      /* Attribute Selector */
+      [class~="important"] {
+        font-weight: bold;
+      }
+
+      /* Descendant Combinator */
+      article p {
+        color: green;
+      }
+
+      /* Child Combinator */
+      ul > li {
+        list-style-type: square;
+      }
+
+      /* Adjacent Sibling Combinator */
+      h2 + p {
+        font-style: italic;
+      }
+
+      /* General Sibling Combinator */
+      h2 ~ p {
+        color: gray;
+      }
+
+      /* Pseudo-class */
+      :hover {
+        color: red;
+      }
+
+      /* Pseudo-class */
+      :first-child {
+        font-weight: bold;
+      }
+
+      /* Pseudo-class */
+      :nth-child(odd) {
+        background-color: #f2f2f2;
+      }
+
+      /* Pseudo-element */
+      ::first-line {
+        font-weight: bold;
+      }
+
+      /* Pseudo-element */
+      ::before {
+        content: ">>";
+      }
+
+      /* Attribute Selector */
+      [href^="https://"]
+      {
+        color: blue;
+      }
+
+      /* Attribute Selector */
+      [src$=".jpg"] {
+        border: 1px solid black;
+      }
+
+      /* Attribute Selector */
+      [alt*="logo"] {
+        opacity: 0.8;
+      }
+
+      /* Negation Pseudo-class */
+      p:not(.special) {
+        font-style: italic;
+      }
+    </style>
+    <title>CSS Selector Demo</title>
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+    <p class="highlight">This is a highlighted paragraph.</p>
+    <div id="header">This is a header.</div>
+    <input type="text" required class="important" />
+
+    <article>
+      <p>This is a paragraph inside an article.</p>
+    </article>
+
+    <ul>
+      <li>List item 1</li>
+      <li>List item 2</li>
+    </ul>
+
+    <h2>Heading 2</h2>
+    <p>This is a paragraph following Heading 2.</p>
+    <p>Another paragraph following Heading 2.</p>
+  </body>
+</html>

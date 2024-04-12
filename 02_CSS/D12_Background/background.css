@@ -1,0 +1,48 @@
+/* Default Property */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+
+  /*? Background Color -- Tip to use - hsl(0, 0%, 94%) if required not necessary   */
+  background-color: hsl(0, 0%, 94%);
+
+  /*? Bakcground-Image: its used to add Image in background and we can also add multiple image but its get overlapped */
+  /* background-image: url("/Media/Image/css/brand.png"); */
+  background-image: url("/Media/Image/css/brand.png "),
+    url("/Media/Image/css/css.png");
+
+  /*? To overlapped image on each other we use background blend mode as below */
+  /* background-blend-mode: difference; */
+  /* background-blend-mode: lighten; */
+
+  /*? background repeat - It use to repeat or do not repeat the image */
+  background-repeat: no-repeat;
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+  /* background-repeat: repeat; */
+
+  /* ? background-size  - Specifies the size of the background images. */
+  /* background-size: cover;    */
+  /* it will stretch the aspect ration*/
+
+  /* background-size:contain; */
+  /* Image fit inside the background positioning area. */
+  /* background-size: 100% 100%; */
+
+  /* background-position */
+  background-size: 50% 50%;
+  /* background-position: top left; */
+  /* background-position: top right; */
+  /* background-position: bottom left; */
+  /* background-position: right bottom; */
+  /* background-position: center; */
+  background-position: right;
+  /* background-position: left; */
+}

@@ -1,0 +1,29 @@
+:root {
+  --bg_color: #faebd7;
+  --border-radius: 10px;
+  --padding: 10px;
+  --text_color: #0000ff;
+  --main_font: " Courier New ", Courier, monospace;
+  --tablet-breakpoint: 768px;
+  --desktop-breakpoint: 1024px;
+  --mobile-breakpoint: 360px;
+  --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+  /* 
+  --spacing-unit:10px  */
+}
+
+.box {
+  border: 2px solid grey;
+  border-radius: var(--border-radius);
+  background-color: var(--bg_color);
+  width: 100%;
+  margin: 20px auto;
+  font-family: "Courier New", Courier, monospace;
+}
+
+p {
+  padding: var(--padding);
+  color: var(--text_color);
+  font-family: var(--main_font);
+}

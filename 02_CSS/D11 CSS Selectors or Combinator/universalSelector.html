@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>universal selector</title>
+    <style>
+      /* Usecase 1 -Resetting Style */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* usecase2- Apply Global Style */
+      * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: aqua;
+      }
+      /* All P tag applied following style */
+      p {
+        color: blue;
+      }
+
+      /* Universal Selector Combination -- it will apply maroon color to all text */
+      article * {
+        color: maroon;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, iusto.
+    </p>
+
+    <article>
+      <span>Lorem, ipsum dolor.</span>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </article>
+
+    <p>Lorem, ipsum dolor.</p>
+  </body>
+</html>

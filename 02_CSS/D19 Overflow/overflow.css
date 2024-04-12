@@ -1,0 +1,77 @@
+.box1 {
+  width: 30vw;
+  height: 10vh;
+  border: 2px solid red;
+  overflow: visible;
+  /* Default value is visible */
+}
+.box2 {
+  width: 30vw;
+  height: 10vh;
+  border: 2px solid red;
+  overflow: hidden;
+}
+.box3 {
+  width: 30vw;
+  height: 10vh;
+  border: 2px solid red;
+  overflow: scroll;
+}
+.box4 {
+  width: 30vw;
+  height: 10vh;
+  border: 2px solid red;
+  overflow: auto;
+}
+.box_x {
+  width: 30vw;
+  height: 10vh;
+  border: 2px solid red;
+  /* text-wrap: nowrap;
+   */
+  white-space: nowrap;
+  /* overflow-x: scroll; */
+  /* overflow-y: hidden; */
+  overflow: scroll hidden;
+}
+.box_y {
+  width: 20vw;
+  height: 10vh;
+  border: 2px solid red;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.box6 {
+  width: 30vw;
+  height: 10vh;
+  border: 2px solid red;
+  overflow: clip;
+}
+
+.box7 {
+  width: 30vw;
+  height: 10vh;
+  border: 2px solid red;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.box8 {
+  width: 30vw;
+  height: 10vh;
+  border: 2px solid red;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis " [..]";
+}
+
+.box9 {
+  width: 30vw;
+  height: 10vh;
+  border: 2px solid red;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}

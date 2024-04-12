@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 10px;
+      }
+
+      body {
+        width: 100%;
+        height: 100vh;
+        /* aspect-ratio: 1; */
+        /* background-color: black; */
+        display: grid;
+        place-items: center;
+        background-color: black;
+      }
+      h1 {
+        text-align: center;
+        font-size: 10rem;
+        color: white;
+
+        position: relative;
+        text-transform: uppercase;
+      }
+      h1::before {
+        position: absolute;
+        width: 80%;
+        top: 0;
+        left: 0;
+        content: "Subscribe...";
+        color: orange;
+        overflow: hidden;
+        border-right: 2px solid orange;
+        text-transform: uppercase;
+        animation: textWidth 2s linear infinite;
+      }
+
+      @keyframes textWidth {
+        0% {
+          width: 0;
+        }
+        50% {
+          width: 100%;
+        }
+        100% {
+          width: 0%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Subscribe...</h1>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard Events</title>
+  </head>
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+    }
+    input {
+      width: 280px;
+      padding: 10px;
+    }
+    .data {
+      border-left: 6px solid white;
+      margin: 20px;
+      background-color: grey;
+      border-radius: 4px;
+      width: 300px;
+    }
+    p {
+      color: white;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <input
+        type="text"
+        id="word"
+        placeholder="Enter Char or Text"
+        name="username"
+        autocomplete="off"
+      />
+
+      <div class="data">
+        <p id="press">Input Value:</p>
+        <p id="code">Input Name:</p>
+        <p id="char">Input Type:</p>
+        <p id="type">Event Type:</p>
+      </div>
+    </div>
+  </body>
+  <script>
+    let text = document.getElementById("word");
+
+    const inputHandle = (event) => {
+      console.log(event);
+
+      document.getElementById(
+        "press"
+      ).textContent = `Input Value: ${event.data}`;
+      document.getElementById(
+        "code"
+      ).textContent = `Input Name: ${event.target.name}`;
+      document.getElementById(
+        "char"
+      ).textContent = `Input Type: ${event.inputType}`;
+      document.getElementById("type").textContent = `Event Type: ${event.type}`;
+    };
+    //keydown, keyup
+    text.addEventListener("input", inputHandle);
+    // text.addEventListener("change", inputHandle);
+  </script>
+</html>

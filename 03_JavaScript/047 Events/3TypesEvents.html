@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    button {
+      display: inline-block;
+      padding: 10px;
+      background-color: rgb(91, 91, 200);
+      color: white;
+      font-weight: 700;
+      border-radius: 10px;
+      margin-right: 15px;
+    }
+  </style>
+  <body>
+    <h2>Inline Events</h2>
+    <button onclick="alert('Welcome to JS course')">On click Alert</button>
+    <button ondblclick="alert('Welcome to World best JS Course')">
+      Double Click Alert
+    </button>
+    <button onmouseover="alert('Best World Course')">On Hover Alert</button>
+
+    <h2>DOM Events</h2>
+    <button id="btn1">On click Alert</button>
+    <button id="btn2">Mouse Hover</button>
+
+    <h2>AddEventListner Events</h2>
+    <button id="even">Click Event</button>
+    <button id="event2">Mouse Hover Event</button>
+  </body>
+  <script>
+    document.getElementById("btn1").onclick = function () {
+      alert("Welcome to On click DOM Event Listner");
+    };
+    // document.getElementById("btn1").onclick = function () {
+    //   alert("Welcome to On click DOM Event Listner");
+    // };
+
+    document.getElementById("btn2").onmouseover = function () {
+      alert("Welcome to mouse hover DOM Event Listner");
+    };
+
+    document.getElementById("even").addEventListener("click", () => {
+      alert("Welcome To Click Event Listner");
+    });
+    document.getElementById("event2").addEventListener("mouseover", () => {
+      alert("Welcome to Mouse Hover Event Listner");
+    });
+  </script>
+</html>

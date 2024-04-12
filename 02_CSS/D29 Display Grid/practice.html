@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+         .grid-container {
+            width: 100%;
+            height: 800px;
+
+        background-image: linear-gradient(
+          to bottom,
+          #7b9dcf,
+          #8698d4,
+          #9593d5,
+          #a68bd3,
+          #b983cd
+        );
+
+        display: grid;
+        /* grid-template-rows: 250px 250px; */
+        /* grid-template-rows: repeat(2,250px); */
+
+        /* Repeat with min max */
+        /* grid-template-rows: repeat(2,250px); */
+        /* When row get added to row 3 explicitly then that row get 250px height */
+        grid-auto-rows: 250px;
+
+        /* Auto Fill row */
+        grid-template-rows: repeat(auto-fill,250px);
+
+
+
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* grid-template-columns: repeat(3,1fr); */
+
+        /* Auto width get assign between 250px to 1fr  */
+        /* grid-template-columns: repeat(3,minmax(250px, 1fr)); */
+
+
+        /* Auto Align the grid-item in responsive view */
+        grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+        
+        /* Providing Gap */
+        gap:20px;
+
+
+         /*? align - vertical   |*/
+  align-items: center;
+  /* align-items: self-start; */
+  /* align-items: self-end; */
+  align-items: stretch;
+
+  /*? justify horizontally   -- */
+  /* justify-items: self-start; */
+  /* justify-items: center; */
+  /* justify-items: end; */
+  justify-items: stretch;
+      }
+      .item{
+
+        background-image: linear-gradient(to left bottom, #1cc941, #00c087, #00b1b6, #009ec9, #0088bf, #2189be, #3089bc, #3c8abb, #1ca1cc, #00b8d7, #00cfdb, #37e5da);
+      }
+      
+
+      @media (width > 770px) {
+        .grid-container {
+        grid-template-rows: repeat(2,250px);
+        /* grid-template-columns: repeat(3,minmax(250px, 1fr)); */
+        grid-template-columns: repeat(3,minmax(250px, 300px));
+
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="grid-container">
+      <div class="item item-1">item-1</div>
+      <div class="item item-2">item-2</div>
+      <!-- World Best CSS CourseEver -->
+      <div class="item item-3--child">item-3</div>
+      <div class="item item-4">item-4</div>
+      <div class="item item-5">item-5</div>
+      <div class="item item-6">item-6</div>
+  </body>
+</html>

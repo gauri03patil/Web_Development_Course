@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      h2 {
+        color: #666;
+      }
+
+      p {
+        margin-bottom: 15px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 20px;
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
+
+      code {
+        background-color: #f0f0f0;
+        padding: 2px 5px;
+        border: 1px solid #ccc;
+      }
+    </style>
+    <title>CSS Pseudo-selectors Information</title>
+  </head>
+  <body>
+    <h1>CSS Pseudo-selectors Information</h1>
+
+    <h2>Structural Pseudo-classes:</h2>
+    <ul>
+      <li><code>:first-child</code>: Selects the first child of its parent.</li>
+      <li><code>:last-child</code>: Selects the last child of its parent.</li>
+      <li>
+        <code>:nth-child(n)</code>: Selects elements based on their position
+        among their siblings.
+      </li>
+      <li>
+        <code>:only-child</code>: Selects elements that are the only child of
+        their parent.
+      </li>
+      <li>
+        <code>:first-of-type</code>: Selects the first occurrence of an element
+        type among its siblings.
+      </li>
+      <li>
+        <code>:last-of-type</code>: Selects the last occurrence of an element
+        type among its siblings.
+      </li>
+      <li>
+        <code>:nth-of-type(n)</code>: Selects elements based on their position
+        among siblings of the same type.
+      </li>
+    </ul>
+
+    <h2>Link Pseudo-classes:</h2>
+    <ul>
+      <li><code>:link</code>: Selects unvisited links.</li>
+      <li><code>:visited</code>: Selects visited links.</li>
+      <li>
+        <code>:hover</code>: Selects elements when the mouse is over them.
+      </li>
+      <li>
+        <code>:active</code>: Selects elements being activated (e.g., clicked).
+      </li>
+      <li><code>:focus</code>: Selects elements that have focus.</li>
+    </ul>
+
+    <h2>Negation Pseudo-class:</h2>
+    <ul>
+      <li>
+        <code>:not(selector)</code>: Selects elements that do not match the
+        specified selector.
+      </li>
+    </ul>
+
+    <h2>Pseudo-elements:</h2>
+    <ul>
+      <li>
+        <code>::before</code>: Inserts content before the actual content of an
+        element.
+      </li>
+      <li>
+        <code>::after</code>: Inserts content after the actual content of an
+        element.
+      </li>
+    </ul>
+
+    <p>
+      These pseudo-selectors provide a way to apply styles to elements in a more
+      dynamic and targeted manner, enhancing the design and interactivity of a
+      web page.
+    </p>
+  </body>
+</html>

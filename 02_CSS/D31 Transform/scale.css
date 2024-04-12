@@ -1,0 +1,28 @@
+.container {
+  border: 2px solid black;
+  width: 80vw;
+  height: 90vh;
+  margin: 30px auto;
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 80px;
+}
+
+.box {
+  border: 2px solid purple;
+  background-color: bisque;
+  width: 100px;
+  height: 100px;
+  font-weight: bolder;
+  font-size: 34px;
+
+  /* Transofrmation Propert */
+
+  /* transform: initial; */
+
+  /* transform: rotate(); */
+}
+
+.box1 {
+  transform: scale();
+}

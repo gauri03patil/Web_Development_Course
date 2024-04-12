@@ -1,0 +1,22 @@
+#Synchronous
+
+1. Most of the code is Synchronous
+2. In Synchronous code is excuted line by line
+3. each line of code wait to finish the previous libe of code
+   4.long-running block the execution eg. alert window (until click on okay it wont move to second line)
+
+This will create a problem when any line take lots of time to finish the execution.
+
+#Asynchronous
+
+1. ASyn code executed in background
+2. Asyn code is non-blocking
+3. Execution doesnot wait for a task to finish its work
+4. Callback doesnot make code asyn
+
+#Promises
+
+#Event Loop
+
+1. We have microtask queue and callback queue
+2. the microtask queue get higher priority than call back queue so some time if microtask queue content heavy function then it take time to complete and after completing that call back queue task gets executed

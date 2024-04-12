@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+p {
+  line-height: 20px;
+  letter-spacing: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul {
+  margin: 20px;
+  display: inline-block;
+  /* text-decoration: none; */
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+/* ul li:hover {
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: blue;
+  -moz-text-decoration-line: underline;
+  -moz-text-decoration-style: wavy;
+} */
+
+ul li a {
+  list-style: none;
+  text-decoration: none;
+  /* font-variant: small-caps; */
+}
+ul li:hover {
+  padding-bottom: 10px;
+  border-bottom: 2px solid red;
+}
+
+ul li:active {
+  padding-bottom: 10px;
+  border-bottom: 2px solid red;
+}
+
+.intend {
+  margin: 10px;
+  padding: 10px;
+  text-indent: 45px;
+}
+
+.blink {
+  text-decoration: blink;
+}
+
+#decoration {
+  text-transform: capitalize;
+  /* letter-spacing: 15px; */
+  /* word-spacing: 200px; */
+  text-indent: 20px;
+}
+
+.space {
+  white-space: break-spaces;
+}
+
+.shadow {
+  text-shadow: 4px 7px 3px brown;
+  text-align: center;
+}
+
+.color {
+  margin-top: 20px;
+  color: rebeccapurple;
+  background-color: bisque;
+  border-radius: 2px;
+  border-style: double;
+  border-color: red;
+  padding: 15px;
+  box-shadow: 5px 10px 15px #888888;
+}
+
+.color p {
+  outline: dashed blue;
+  opacity: 0.3;
+}

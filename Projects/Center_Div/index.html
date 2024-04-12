@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Center Div</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      /* Note- working on Center us muse require width and height */
+      width: 100vw;
+      height: 100vh;
+
+      /* 1st Trick */
+      /* position: relative; */
+
+      /* 2nd Flexbox */
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+
+      /* 3rd Grid */
+      /* display: grid;
+      place-items: center; */
+
+      /* 4th grid */
+      /* display: grid;
+      justify-content: center;
+      align-items: center; */
+
+      /* 5th Flex and margin */
+      display: flex;
+    }
+
+    .parent {
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+
+      /* 1st  */
+      /* position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); */
+
+      /* 5th */
+      margin: auto;
+    }
+  </style>
+  <body>
+    <div class="parent"></div>
+  </body>
+</html>

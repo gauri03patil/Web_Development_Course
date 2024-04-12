@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage</title>
+  </head>
+  <body>
+    <h1>Welcome to Storage API</h1>
+  </body>
+  <script>
+    // Storing and Retrieving Data:
+    localStorage.setItem("name", "Akshay Patil");
+    let localData = localStorage.getItem("name");
+    console.log(localData);
+    // console.log(localStorage.getItem("workout"));
+
+    //Updating Data
+
+    localStorage.setItem("name", "Alex Patil");
+    console.log(localStorage.getItem("name"));
+
+    //Handling Json Data and retriev
+    const user = {
+      name: "John Doe",
+      email: "john@example.com",
+    };
+
+    console.log(user); //Return json
+    console.log(JSON.stringify(user)); //return string
+    localStorage.setItem("userDetails", JSON.stringify(user));
+
+    let userData = localStorage.getItem("userDetails");
+    console.log(JSON.parse(userData));
+
+    //Set and remove Locale Storage
+    localStorage.setItem("token", "abc123");
+
+    // Removing data
+    localStorage.removeItem("token");
+
+    //Handling Error
+
+    try {
+      // Attempting to store data
+      localStorage.setItem("username", "john_doe");
+    } catch (error) {
+      // Handling errors (e.g., storage quota exceeded)
+      console.error("Error:", error);
+    }
+    //Clearing Data
+    // Clearing all data
+    localStorage.clear();
+  </script>
+</html>

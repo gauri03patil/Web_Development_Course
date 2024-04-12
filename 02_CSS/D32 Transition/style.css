@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: antiquewhite;
+
+  width: 50vw;
+  height: 70vh;
+  margin: 40px auto;
+}
+
+.box {
+  width: 5vw;
+  height: 7vh;
+  background-color: blue;
+  /* transition: ; */
+
+  /* Below are 4 important property we use in transition */
+  /* transition-property: transform, background-color, font-size;
+  transition-duration: 4s;
+  transition-timing-function: linear;
+
+  transition-delay: 1s; */
+
+  /* All transition property in one line */
+  transition: all 4s linear 1s;
+  /* all -- it will apply transiotion to all property present in class */
+
+  /* This time function we can get from the console  */
+  /* transition-timing-function: cubic-bezier(0.4, 0, 0.68, 0.94); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.translate {
+  transform: translateX(30vw) translateY(30vh);
+  background-color: rgb(173, 89, 89);
+  font-size: 43px;
+}
+
+/* 
+Steps : 
+In Browser add "translate" class for box to see the transition
+*/

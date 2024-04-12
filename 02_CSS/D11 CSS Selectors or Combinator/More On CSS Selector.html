@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More On CSS Selector</title>
+    <style>
+      .large::first-line {
+        color: blueviolet;
+      }
+      .card::first-letter {
+        text-transform: capitalize;
+        font-size: 40px;
+      }
+      ::selection {
+        color: rgb(171, 119, 50);
+      }
+      .card:nth-child(even) {
+        background-color: rgb(182, 124, 124);
+      }
+      .cards::before {
+        content: "Welcome to CSS Selectors";
+      }
+      .cards::after {
+        content: "End Of CSS Selectors";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cards">
+      <div class="card">Hey I am Good</div>
+      <div class="card">I am Better</div>
+      <div class="card">there is no scope</div>
+      <div class="card large">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut et facere
+        perferendis blanditiis. Odit nobis velit nisi dicta saepe dolorem
+        eligendi numquam ipsam veritatis vero, debitis accusantium minus,
+        aspernatur enim. Eligendi aperiam rem voluptatum rerum blanditiis
+        molestiae omnis deserunt deleniti. Nobis hic, in, numquam atque dolorem
+        aspernatur inventore sed ipsa accusamus iure voluptatum vero est beatae
+        delectus non accusantium neque, esse harum magnam ratione. Earum dolores
+        alias nihil totam a! Laboriosam reiciendis itaque tempore nemo delectus
+        iusto, hic quis rerum.
+      </div>
+    </div>
+  </body>
+</html>

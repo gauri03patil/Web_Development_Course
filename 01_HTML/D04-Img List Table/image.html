@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Tag</title>
+  </head>
+  <body>
+    <h1>Learning Image Tag</h1>
+
+    <h2>Basic Image</h2>
+    <img src="./img/train.png" alt="Train Image" />
+
+    <h2>Image With height and width</h2>
+    <img src="./img/train.png" alt="Train Image" height="200" width="200" />
+
+    <h2>Image link</h2>
+    <a href="./img/nature.jpg"
+      ><img src="./img/train.png" alt="Train Image" height="100" width="100"
+    /></a>
+
+    <h2>Responsive Images: with srcset</h2>
+    <img
+      src="nature.jpg"
+      alt="nature Image"
+      srcset="./img/train.png 300w, ./img/nature.jpg 600w, ./img/water.jpg 900w"
+      sizes="(max-width: 600px) 100vw, 50vw"
+    />
+
+    <h2>Image with Caption</h2>
+    <figure>
+      <img src="./img/nature.jpg" alt="Nature Image" height="200" />
+      <figcaption>The Nature Image</figcaption>
+    </figure>
+
+    <h2>Background Image</h2>
+    <div style="background-image: url(./img/train.png)">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, eveniet,
+      nisi perspiciatis sapiente atque ad quibusdam earum laborum exercitationem
+      sit ipsam voluptate dolore aliquid, quos error quia consequuntur?
+      Excepturi, fugit!
+    </div>
+
+    <h2>Lazy Loading</h2>
+    <img src="./img/water.jpg" alt="Nature image" loading="lazy" />
+  </body>
+</html>

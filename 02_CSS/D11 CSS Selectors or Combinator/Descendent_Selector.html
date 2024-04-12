@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descendant Selectors:</title>
+  </head>
+  <style>
+    ul li {
+      color: brown;
+    }
+    section p {
+      color: blue;
+    }
+  </style>
+  <body>
+    <h1>Descendant Selectors:</h1>
+    <p>
+      The Descendent Selector target all the element that are descendet to
+      specific parent and it doesnot matter the level of nesting
+    </p>
+
+    <h3>Example 1:</h3>
+    <ul>
+      <li>
+        Fruits
+        <ol>
+          <li>Mango</li>
+          <li>Apple</li>
+          <li>Banana</li>
+        </ol>
+      </li>
+      <li>
+        Animal
+        <ul>
+          <li>Dog</li>
+          <li>Cat</li>
+        </ul>
+      </li>
+      <li>Plants</li>
+    </ul>
+    <h3>Example 2</h3>
+    <section>
+      <h2>Section 1</h2>
+      <p>This is a paragraph in Section 1.</p>
+    </section>
+
+    <section>
+      <h2>Section 2</h2>
+      <p>This is a paragraph in Section 2.</p>
+      <div>
+        <p>This nested paragraph is also in Section 2.</p>
+      </div>
+      <article>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </article>
+    </section>
+  </body>
+</html>

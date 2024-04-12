@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Project</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-image: linear-gradient(to right, #927fba, #59c2f7);
+
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #color1,
+    #color2 {
+      display: inline-block;
+      padding: 10px 14px;
+      margin: 1.5rem;
+      border-radius: 0.7rem;
+      border: none;
+      color: white;
+      font-weight: 700;
+    }
+    #color1 {
+      background-color: black;
+    }
+    #color2 {
+      background-color: rgb(10, 219, 59);
+      /* color: black; */
+    }
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    #gradient {
+      background-color: rgb(130, 126, 126);
+      padding: 0.8rem;
+      width: 300px;
+      height: 80px;
+      color: white;
+      font-weight: 500;
+      border-left: 8px solid rgb(199, 60, 60);
+      border-radius: 0.3rem;
+      margin-top: 1rem;
+    }
+  </style>
+  <body>
+    <section class="container">
+      <div>
+        <button id="color1">#674589</button>
+        <button id="color2">#a73533</button>
+      </div>
+      <p>Copy Code from here</p>
+      <div id="gradient">
+        background-image: linear-gradient(to right top, #051937, #004d7a);
+      </div>
+    </section>
+  </body>
+  <script>
+    let color1 = document.getElementById("color1");
+    let color2 = document.getElementById("color2");
+    let container = document.querySelector(".container");
+    let gradientDiv = document.querySelector("#gradient");
+    let rgb1 = "#674589";
+    let rgb2 = "#a73533";
+    const hexColor = "0123456789abcdef";
+    // console.log(hexColor.length);
+    const generateGradient = () => {
+      let color = "#";
+      //   console.log("New Hex Code is");
+      for (let i = 0; i < 6; i++) {
+        let char = hexColor[Math.floor(Math.random() * 16)];
+        color += char;
+      }
+      //   console.log(color);
+      return color;
+    };
+
+    let handleColor1 = () => {
+      rgb1 = generateGradient();
+      console.log(rgb1);
+      color1.innerText = rgb1.toUpperCase();
+      gradientDiv.innerText = `background-image: linear-gradient(to right top, ${rgb1}, #004d7a);`;
+      document.body.style.backgroundImage = `linear-gradient(to right top, ${rgb1}, ${rgb2})`;
+    };
+    let handleColor2 = () => {
+      let rgb2 = generateGradient();
+      console.log(rgb2);
+      color2.innerText = rgb2.toUpperCase();
+      gradientDiv.innerText = `background-image: linear-gradient(to right top, ${rgb1}, ${rgb2});`;
+      document.body.style.backgroundImage = `linear-gradient(to right top, ${rgb1}, ${rgb2})`;
+    };
+
+    color1.addEventListener("click", handleColor1);
+    color2.addEventListener("click", handleColor2);
+
+    gradientDiv.addEventListener("click", () => {
+      //   console.log(gradientDiv.innerText);
+      navigator.clipboard.writeText(gradientDiv.innerText);
+    });
+  </script>
+</html>

@@ -1,0 +1,172 @@
+HTML Entity or Characters: https://www.htmlquick.com/reference/character-entity-reference.html
+
+Border-collapse: https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse
+
+Hosting Site: 1) Netlify (free) 2)hostinger (paid)
+Even we have another hosting site
+
+Light House: To Check the website and each page performance
+i) Image performance: use webp and avif images and alt tag to each image add reduce the image size
+ii) Semantic Tag: use semantic HTML
+
+How to start Code:
+1.Add Comment For Starting Component/Module
+2.Add a Proper Semantic Tag
+3.divide the content using div tag like hero-header, hero-para hero-image hero-cta etc
+
+Note: add a class or id or data-component to each html tag
+
+Color: https://colorhunt.co/
+
+Get Tint Shade : https://maketintsandshades.com/
+
+Size Unit : For HTML Tag always give % or rem unit so we can easily make our website response
+
+Responsive: always develope website in mobile first approach
+
+<!--? pseudo -->
+
+Pseudo Class -> we have single colon :
+Pseudo Element -> we have two colon ::
+
+<!--? border-radius : -->
+
+to make a circle we required same width and height and then we can use border-radius:50%
+
+<!--? Best Website for CSS: -->
+
+Gradient URL : https://mycolor.space/gradient / https://uigradients.com/#DirtyFog
+/_ checkout more on here 👉 https://9elements.github.io/fancy-border-radius/ _/
+/_ checkout more on here 👉 https://10015.io/tools/css-border-radius-generator _/
+https://10015.io/tools/css-glassmorphism-generator
+
+<!--? Padding : -->
+
+We are not using negative value in padding
+
+<!--?  Box Shadow -->
+
+Website for Box Shadow:<!--! https://getcssscan.com/css-box-shadow-examples -->
+
+<!--? Websites  -->
+
+Box Shadow: https://getcssscan.com/css-box-shadow-examples
+Images : https://pixcap.com/explore
+
+<!-- ? Link Style -->
+
+the link state should be specify in LVHA order L-Link , V-Visited, H:hover , A:active to get worked
+
+<!--? Position  -->
+
+When we are working on position make sure that we are giving relative position to parent else it consider html root as relative or any respective who has applied the relative position
+
+Fixed : IT get fixed on the screen it won't change on scroll but make you have use the top/bottom or left/right respective property
+
+Sticky : it get stick to its own div once div or container scroll part end it goen with it
+Matlab aapne khud ke div me ye sticky rahaita hai jaise scroll karte hai and next div ata haai tab ye apne div ke saat upaar or niche scroll ho jata haai
+
+<!-- Flex -->
+
+justify content: work on main axis if dlex direction is row then main axis in row or --> and if flex directio is coloumn then main axis is coloumn down arrow
+align item L it works on cross axis
+
+<!--? Grid  -->
+
+fr unit --> as fr fractional unit is use to take all available space and we use value as 1fr 2fr 3fr as 2fr taken double space than 1fr and 3fr take triple space than 1fr
+
+<!--? Transition  -->
+
+In transition we applied the transition on the single property or all property
+
+we select the element where we need to applied the trnasition
+
+<!-- ? Comment  -->
+
+Bootstrap 5 Quick Snippets : This addon is use for add comment like HTML:Comment , CSS-> comment
+
+<!-- ? Rule of Righting CSS -->
+<!-- ? Inline Element -->
+
+Padding top and bottom not working on inline element
+
+<!-- Shape Devide URL -->
+
+https://www.shapedivider.app/
+
+<!--? Same width / margin from both side -->
+
+    You can create a container with max-width size and use that container in every layout
+
+Example:
+.container {
+max-width: 142rem;
+margin: 0 auto;
+
+ <!-- padding: 9.6rem 2.4rem; -->
+
+}
+
+<!-- ? Multi Line comment -->
+
+alt+shift+a
+
+// Differenc between array and object
+In JavaScript, arrays use numbered indexes.
+
+In JavaScript, objects use named indexes.
+
+When to Use Arrays. When to use Objects.
+
+You should use objects when you want the element names to be strings (text).
+You should use arrays when you want the element names to be numbers.
+
+//How to know its object or array
+
+use Array.isArray(fruits); and instanceof
+const fruits = ["Banana", "Orange", "Apple"];
+
+fruits instanceof Array;
+
+<!--? BEst PRactice  -->
+
+use double gap size in between Image and title like if your title and para have 2rem (20px) then gap between Image title should be 40px - 4rem
+
+<!-- USe text align  -->
+
+use text align center to center the text -- use flex center when needed else no need to add extra code
+
+<!-- Layout -->
+
+Inside layout we add all layout code like flex, grid, grid-two--cols, grid-three--cols
+
+<!-- Icons Fontawesome -->
+
+cdn : https://cdnjs.com/libraries/font-awesome
+FontAwesome: https://fontawesome.com/
+
+<!-- ? Images -->
+
+pixelied.com
+squoosh.app
+
+<!-- Grid Responsive auto ajust  -->
+
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+<!-- Animtion  -->
+
+Aos Animation
+https://michalsnik.github.io/aos/
+
+<!-- Free emails -->
+
+https://formspree.io/
+
+<!-- All Evetns  -->
+
+https://www.w3schools.com/jsref/obj_events.asp
+
+<!-- Website Admin Panel Practice -->
+
+https://www.wrappixel.com/
